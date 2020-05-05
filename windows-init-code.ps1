@@ -6,7 +6,7 @@ Install-Module -Name PSWindowsUpdate –Force
 Get-WindowsUpdate –Install
 
 # Eliminate Bloatware
-iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/Sycnex/Windows10Debloater/master/Windows10SysPrepDebloater.ps1') '-Debloat')
+iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/Sycnex/Windows10Debloater/master/Windows10SysPrepDebloater.ps1') + ' -Debloat')
 
 # Install basics
 choco install -y 7zip
